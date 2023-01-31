@@ -18,7 +18,7 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "items": {
+                "properties": {
                     "server": {
                         "type": "string",
                         "description": "Nameserver domain name (example: ns1.meow.catmunch)"
