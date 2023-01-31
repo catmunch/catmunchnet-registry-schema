@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/domain.schema.json",
+    "$id": "https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/main/domain.schema.json",
     "title": "domain",
     "description": "Describes a .catmunch domain in catmunchnet",
     "type": "object",
@@ -36,5 +36,5 @@
             }
         }
     },
-    "required": ["cidr"]
+    "required": ["domain"]
 }

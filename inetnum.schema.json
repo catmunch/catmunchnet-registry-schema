@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/inetnum.schema.json",
+    "$id": "https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/main/inetnum.schema.json",
     "title": "inetnum",
     "description": "Describes an IPv4 segment in catmunchnet",
     "type": "object",
