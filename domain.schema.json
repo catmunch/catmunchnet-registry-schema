@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/domain.schema.json",
+    "title": "domain",
+    "description": "Describes a .catmunch domain in catmunchnet",
+    "type": "object",
+    "properties": {
+        "domain": {
+            "description": "Domain name (example: meow.catmunch)",
+            "type": "string"
+        },
+        "description": {
+            "description": "(Optional) Description of this domain",
+            "type": "string"
+        },
+        "ns": {
+            "description": "(Optional) Name server of this domain",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "items": {
+                    "server": {
+                        "type": "string",
+                        "description": "Nameserver domain name (example: ns1.meow.catmunch)"
+                    },
+                    "a": {
+                        "type": "string",
+                        "description": "(Optional) Return an A record containing value of this field"
+                    },
+                    "aaaa": {
+                        "type": "string",
+                        "description": "(Optional) Return an AAAA record containing value of this field"
+                    }
+                },
+                "required": ["server"]
+            }
+        }
+    },
+    "required": ["cidr"]
+}

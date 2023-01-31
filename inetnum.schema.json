@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/inetnum.schema.json",
+    "title": "inetnum",
+    "description": "Describes an IPv4 segment in catmunchnet",
+    "type": "object",
+    "properties": {
+        "cidr": {
+            "description": "CIDR notation of this IPv4 segment",
+            "type": "string"
+        },
+        "description": {
+            "description": "(Optional) Description of this IPv4 segment",
+            "type": "string"
+        },
+        "ns": {
+            "description": "(Optional) Name server for rDNS",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "items": {
+                    "server": {
+                        "type": "string",
+                        "description": "Nameserver domain name (example: ns1.meow.catmunch)"
+                    },
+                    "a": {
+                        "type": "string",
+                        "description": "(Optional) Return an A record containing value of this field"
+                    },
+                    "aaaa": {
+                        "type": "string",
+                        "description": "(Optional) Return an AAAA record containing value of this field"
+                    }
+                },
+                "required": ["server"]
+            }
+        }
+    },
+    "required": ["cidr"]
+}

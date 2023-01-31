@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/autnum.schema.json",
+    "title": "autnum",
+    "description": "Describes an autonomous system number in catmunchnet",
+    "type": "object",
+    "properties": {
+        "autnum": {
+            "description": "Autonomous system number",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of this autonomous system",
+            "type": "string"
+        },
+        "description": {
+            "description": "(Optional) Description of this autonomous system",
+            "type": "string"
+        }
+    },
+    "required": ["cidr"]
+}
