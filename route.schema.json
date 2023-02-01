@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/main/route.schema.json",
+    "title": "route",
+    "description": "Describes a route in catmunchnet",
+    "type": "object",
+    "properties": {
+        "cidr": {
+            "description": "CIDR notation of this route",
+            "type": "string"
+        },
+        "description": {
+            "description": "(Optional) Description of this route",
+            "type": "string"
+        },
+        "origin": {
+            "description": "Origins of this route",
+            "type": "array",
+            "items": {
+                "description": "ASN of the origin",
+                "type": "string"
+            }
+        }
+    },
+    "required": ["cidr", "origin"]
+}

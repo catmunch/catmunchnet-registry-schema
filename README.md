@@ -23,3 +23,9 @@
 ```yaml
 # yaml-language-server: $schema=https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/main/domain.schema.json
 ```
+
+## routes
+
+```yaml
+# yaml-language-server: $schema=https://raw.githubusercontent.com/catmunch/catmunchnet-registry-schema/main/route.schema.json
+```
